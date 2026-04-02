@@ -11,6 +11,11 @@ Dataset facts:
   - Target column   : 'Class' (0 = Legit, 1 = Fraud)
 """
 
+import utils.net
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 import os
 import numpy as np
 import pandas as pd
