@@ -103,20 +103,26 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 # Step 2 — Clone the repo (gets latest code)
-!git clone https://github.com/YOURNAME/credit-fraud-detection.git
-%cd credit-fraud-detection
+!git clone https://github.com/20020109tharindu/ML_Final_Project.git
+%cd ML_Final_Project
 
 # Step 3 — Install libraries
 !pip install imbalanced-learn -q
 
 # Step 4 — Load the shared splits
-import sys
-sys.path.append('/content/credit-fraud-detection/preprocessing')
-from preprocessing import load_splits
+import pandas as pd
 
-X_train, X_test, y_train, y_test = load_splits(
-    data_dir='/content/drive/MyDrive/FraudDetection/cleaned_data'
-)
+X_train = pd.read_csv('/content/drive/MyDrive/FraudDetection/cleaned_data/X_train.csv')
+X_test  = pd.read_csv('/content/drive/MyDrive/FraudDetection/cleaned_data/X_test.csv')
+y_train = pd.read_csv('/content/drive/MyDrive/FraudDetection/cleaned_data/y_train.csv').squeeze()
+y_test  = pd.read_csv('/content/drive/MyDrive/FraudDetection/cleaned_data/y_test.csv').squeeze()
+
+print(f"✅ Data loaded!")
+print(f"   X_train : {X_train.shape}")
+print(f"   X_test  : {X_test.shape}")
+print(f"   Fraud in train : {y_train.sum()}")
+print(f"   Fraud in test  : {y_test.sum()}")
+
 ```
 
 > ✅ All 4 members use the **exact same** X_train, X_test, y_train, y_test
