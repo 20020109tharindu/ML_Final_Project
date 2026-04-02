@@ -7,12 +7,12 @@ A machine learning project that detects fraudulent credit card transactions by c
 
 ## 👥 Team Members
 
-| Member | Model Assigned | GitHub Username |
-|--------|---------------|-----------------|
-| [Name] | Logistic Regression | @username |
-| [Name] | Random Forest | @username |
-| [Name] | Decision Tree | @username |
-| [Name] | SVM | @username |
+| Member     | Model Assigned      | GitHub Username |
+|------------|---------------------|-----------------|
+| IT22581952 | Logistic Regression | @username |
+| IT22574886 | Random Forest       | @username |
+| IT22604712 | Decision Tree       | @NavanjanaLAV |
+| IT22609908 | SVM                 | @username |
 
 
 ---
