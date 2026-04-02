@@ -32,16 +32,11 @@ ML_Final_Project/
 │   └── y_test.csv
 │
 ├── preprocessing/
-│   └── preprocessing.py            ← Scaling, SMOTE, train/test split, save/load
+│   └── fraud_preprocessing.py            ← Scaling, SMOTE, train/test split, save/load
+│   ├── preprocessing.ipynb 
 │
 ├── models/
-│   ├── logistic_regression.py
-│   ├── random_forest.py
-│   ├── decision_tree.py
-│   └── svm.py
-│
-├── notebooks/
-│   ├── 00_preprocessing.ipynb      ← Team lead runs this ONCE
+     ← Team lead runs this ONCE
 │   ├── 01_logistic_regression.ipynb
 │   ├── 02_random_forest.ipynb
 │   ├── 03_decision_tree.ipynb
