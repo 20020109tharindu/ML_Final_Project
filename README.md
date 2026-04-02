@@ -33,10 +33,9 @@ ML_Final_Project/
 │
 ├── preprocessing/
 │   └── fraud_preprocessing.py            ← Scaling, SMOTE, train/test split, save/load
-│   ├── preprocessing.ipynb 
+│   ├── preprocessing.ipynb               ← Team lead runs this ONCE
 │
 ├── models/
-     ← Team lead runs this ONCE
 │   ├── 01_logistic_regression.ipynb
 │   ├── 02_random_forest.ipynb
 │   ├── 03_decision_tree.ipynb
